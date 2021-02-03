@@ -7,7 +7,72 @@
         Survey Form
     </title>
 </head>
-<body>
-    
-</body>
+    <body>
+    <h1 id="title">Random Survey Form</h1>
+    <p id="description"> Thank you for taking the time to help us improve the platform</p>
+    <form id="survey-form">
+        <div>
+            <label id="name-label"  for="name">Name</label>
+            <input type="text" name="name" id="name" placeholder="Enter your name here" required/>
+        </div>
+        <div>
+            <label id="email-label" for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Enter your e-mail here" required/>
+        </div>
+        <div>
+            <label id="number-label" for="number">Age</label>
+            <input type="number" name="number" id="number" placeholder="Age" min="13" max="99"/>
+        </div>
+        <div>
+            <p>Which one of these sentences is true for you?</p>
+                <select id="dropdown" name="sentence" required>
+                    <option disabled selected value>Select your sentence</option>
+                    <option value="human">I'm a human</option>
+                    <option value="dog">I'm a dog</option>
+                    <option value="alien">I'm an alien</option>
+                </select>
+        </div>
+        <div>
+            <p>Would you recomend us to a friend?</p>
+            <label>
+                <input type="radio" value="definitely" name="recomendation" checked/>Definitely!
+            </label>
+            <label>
+                <input type="radio" value="sure" name="recomendation" />Sure
+            </label>
+            <label>
+                <input type="radio" value="not-really" name="recomendation" />Not really
+            </label>
+            <label>
+                <input type="radio" value="never" name="recomendation" />Never!
+            </label>
+        </div>
+        <div>
+            <p>Select the options that suit you</p>
+            <label>
+                <input type="checkbox" value="cook" name="skill"/>I can cook
+            </label>
+            <label>
+                <input type="checkbox" value="ride-bike" name="skill" />I can ride a bike
+            </label>
+            <label>
+                <input type="checkbox" value="run" name="skill" />I can run very fast
+            </label>
+            <label>
+                <input type="checkbox" value="swim" name="skill" />I can swim
+            </label>
+        </div>
+        <div>
+            <p>Tell us what you did last weekend!</p>
+            <textarea id="comment" placeholder="Write as much as you want." name="comments">
+
+            </textarea>
+        </div>
+        <div>
+            <button type="submit" id="submit">Send Form</button>
+        </div>
+    </form>
+
+    </body>
+    <script src= https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js></script>
 </html>
